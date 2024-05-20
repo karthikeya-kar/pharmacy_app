@@ -1,0 +1,22 @@
+name: pharmacy_app 
+
+
+
+flutter:
+  assets:
+    - assets/Untitled design (4).png  # Adjust the path if necessary
+
+
+environment:
+  sdk: ">=2.12.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+
+
