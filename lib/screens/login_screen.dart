@@ -18,37 +18,45 @@ class LoginScreen extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.center,
               crossAxisAlignment: CrossAxisAlignment.stretch,
               children: <Widget>[
-                Text(
+               /* Text(
                   'Login Page',
                   textAlign: TextAlign.center,
                   style: TextStyle(
                     fontSize: 24,
                     fontWeight: FontWeight.bold,
-                    color: Colors.white,
+                    color: Color.fromARGB(255, 95, 93, 93),
                   ),
-                ),
+                ),*/
                 SizedBox(height: 30), // Adds some space between the title and the form fields
                 TextField(
                   decoration: InputDecoration(
-                    filled: true,
-                    fillColor: Colors.white.withOpacity(0.8),
                     hintText: 'User ID',
-                    border: OutlineInputBorder(
-                      borderRadius: BorderRadius.circular(8.0),
+                    hintStyle: TextStyle(color: const Color.fromARGB(255, 100, 99, 99)),
+                    border: InputBorder.none,
+                    enabledBorder: UnderlineInputBorder(
+                      borderSide: BorderSide(color: const Color.fromARGB(255, 105, 104, 104)),
+                    ),
+                    focusedBorder: UnderlineInputBorder(
+                      borderSide: BorderSide(color: Color.fromARGB(255, 99, 98, 98)),
                     ),
                   ),
+                  style: TextStyle(color: Colors.white),
                 ),
                 SizedBox(height: 20),
                 TextField(
                   obscureText: true, // Masks the password input
                   decoration: InputDecoration(
-                    filled: true,
-                    fillColor: Colors.white.withOpacity(0.8),
                     hintText: 'Password',
-                    border: OutlineInputBorder(
-                      borderRadius: BorderRadius.circular(8.0),
+                    hintStyle: TextStyle(color: Colors.white),
+                    border: InputBorder.none,
+                    enabledBorder: UnderlineInputBorder(
+                      borderSide: BorderSide(color: Colors.white),
+                    ),
+                    focusedBorder: UnderlineInputBorder(
+                      borderSide: BorderSide(color: Colors.white),
                     ),
                   ),
+                  style: TextStyle(color: Colors.white),
                 ),
                 SizedBox(height: 20),
                 ElevatedButton(
@@ -65,7 +73,7 @@ class LoginScreen extends StatelessWidget {
                   child: Text(
                     'Forgot Password?',
                     style: TextStyle(
-                      color: Colors.white,
+                      color: const Color.fromARGB(255, 104, 102, 102),
                       decoration: TextDecoration.underline,
                     ),
                   ),
