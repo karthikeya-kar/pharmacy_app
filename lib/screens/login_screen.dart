@@ -18,7 +18,7 @@ class LoginScreen extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.center,
               crossAxisAlignment: CrossAxisAlignment.stretch,
               children: <Widget>[
-               /* Text(
+                Text(
                   'Login Page',
                   textAlign: TextAlign.center,
                   style: TextStyle(
@@ -26,18 +26,18 @@ class LoginScreen extends StatelessWidget {
                     fontWeight: FontWeight.bold,
                     color: Color.fromARGB(255, 95, 93, 93),
                   ),
-                ),*/
+                ),
                 SizedBox(height: 30), // Adds some space between the title and the form fields
                 TextField(
                   decoration: InputDecoration(
                     hintText: 'User ID',
-                    hintStyle: TextStyle(color: const Color.fromARGB(255, 100, 99, 99)),
+                    hintStyle: TextStyle(color: Colors.white),
                     border: InputBorder.none,
                     enabledBorder: UnderlineInputBorder(
-                      borderSide: BorderSide(color: const Color.fromARGB(255, 105, 104, 104)),
+                      borderSide: BorderSide(color: Colors.white),
                     ),
                     focusedBorder: UnderlineInputBorder(
-                      borderSide: BorderSide(color: Color.fromARGB(255, 99, 98, 98)),
+                      borderSide: BorderSide(color: Colors.white),
                     ),
                   ),
                   style: TextStyle(color: Colors.white),
@@ -68,7 +68,8 @@ class LoginScreen extends StatelessWidget {
                 SizedBox(height: 20),
                 TextButton(
                   onPressed: () {
-                    // Add forgot password functionality here
+                    // Navigate to the Forgot Password screen
+                    Navigator.pushNamed(context, '/forgot-password');
                   },
                   child: Text(
                     'Forgot Password?',
