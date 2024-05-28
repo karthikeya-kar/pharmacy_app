@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:pharmacy_app/screens/login_screen.dart'; // Adjust the import path as per your project structure
+import 'screens/login_screen.dart';
+import 'screens/forgotpassword_screen.dart'; // Correct file name
 
 void main() {
   runApp(MyApp());
@@ -9,11 +10,14 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Your App Title',
+      title: 'Pharmacy App',
       theme: ThemeData(
-        // Add your app theme configurations here
+        primarySwatch: Colors.blue,
       ),
-      home: LoginScreen(), // Navigate to the LoginScreen as the initial screen
+      home: LoginScreen(),
+      routes: {
+        '/forgot-password': (context) => ForgotPasswordScreen(),
+      },
     );
   }
 }
