@@ -5,7 +5,7 @@ import 'package:pharmacy_app/main.dart';
 
 void main() {
   testWidgets('Login Screen Test', (WidgetTester tester) async {
-    await tester.pumpWidget(MyApp());
+    await tester.pumpWidget(const MyApp());
 
     // Verify that the login button is present
     expect(find.text('Login'), findsOneWidget);

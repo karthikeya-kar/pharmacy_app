@@ -1,11 +1,13 @@
 import 'package:flutter/material.dart';
 
 class ForgotPasswordScreen extends StatelessWidget {
+  const ForgotPasswordScreen({Key? key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       body: Container(
-        decoration: BoxDecoration(
+        decoration: const BoxDecoration(
           image: DecorationImage(
             image: AssetImage('assets/forgot.png'), // Path to your forgot password background image
             fit: BoxFit.cover, // Ensures the image covers the entire screen
@@ -18,7 +20,7 @@ class ForgotPasswordScreen extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.center,
               crossAxisAlignment: CrossAxisAlignment.stretch,
               children: <Widget>[
-                Text(
+                const Text(
                   'Forgot Password',
                   textAlign: TextAlign.center,
                   style: TextStyle(
@@ -27,8 +29,8 @@ class ForgotPasswordScreen extends StatelessWidget {
                     color: Colors.white,
                   ),
                 ),
-                SizedBox(height: 30), // Adds some space between the title and the form fields
-                TextField(
+                const SizedBox(height: 30), // Adds some space between the title and the form fields
+                const TextField(
                   decoration: InputDecoration(
                     hintText: 'Enter your email or username',
                     hintStyle: TextStyle(color: Colors.white),
@@ -42,20 +44,20 @@ class ForgotPasswordScreen extends StatelessWidget {
                   ),
                   style: TextStyle(color: Colors.white),
                 ),
-                SizedBox(height: 20),
+                const SizedBox(height: 20),
                 ElevatedButton(
                   onPressed: () {
                     // Add forgot password functionality here
                   },
-                  child: Text('Submit'),
+                  child: const Text('Submit'),
                 ),
-                SizedBox(height: 20),
+                const SizedBox(height: 20),
                 TextButton(
                   onPressed: () {
                     // Navigate back to the login screen
                     Navigator.pop(context);
                   },
-                  child: Text(
+                  child: const Text(
                     'Back to Login',
                     style: TextStyle(
                       color: Colors.white,
