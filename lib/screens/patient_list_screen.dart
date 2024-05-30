@@ -98,7 +98,11 @@ class _PatientListScreenState extends State<PatientListScreen> {
                           title: Text('Patient ${index + 1}', style: const TextStyle(color: Colors.black)),
                           subtitle: const Text('Patient details here', style: TextStyle(color: Colors.black54)),
                           onTap: () {
-                            // Handle patient selection here
+                            Navigator.pushNamed(
+                              context,
+                              '/patient_profile',
+                              arguments: 'Patient ${index + 1}',
+                            );
                           },
                         ),
                       );
