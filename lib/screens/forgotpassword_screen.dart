@@ -20,20 +20,12 @@ class ForgotPasswordScreen extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.center,
               crossAxisAlignment: CrossAxisAlignment.stretch,
               children: <Widget>[
-                const Text(
-                  'Forgot Password',
-                  textAlign: TextAlign.center,
-                  style: TextStyle(
-                    fontSize: 24,
-                    fontWeight: FontWeight.bold,
-                    color: Colors.white,
-                  ),
-                ),
+                
                 const SizedBox(height: 30), // Adds some space between the title and the form fields
                 const TextField(
                   decoration: InputDecoration(
                     hintText: 'Enter your email or username',
-                    hintStyle: TextStyle(color: Colors.white),
+                    hintStyle: TextStyle(color: Color.fromARGB(255, 238, 237, 241)),
                     border: InputBorder.none,
                     enabledBorder: UnderlineInputBorder(
                       borderSide: BorderSide(color: Colors.white),
@@ -51,7 +43,7 @@ class ForgotPasswordScreen extends StatelessWidget {
                   },
                   child: const Text('Submit'),
                 ),
-                const SizedBox(height: 20),
+                const SizedBox(height: 30),
                 TextButton(
                   onPressed: () {
                     // Navigate back to the login screen
@@ -61,7 +53,7 @@ class ForgotPasswordScreen extends StatelessWidget {
                     'Back to Login',
                     style: TextStyle(
                       color: Colors.white,
-                      decoration: TextDecoration.underline,
+                   
                     ),
                   ),
                 ),
