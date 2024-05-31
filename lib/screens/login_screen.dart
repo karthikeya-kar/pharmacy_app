@@ -15,25 +15,17 @@ class LoginScreen extends StatelessWidget {
         ),
         child: Center(
           child: Padding(
-            padding: const EdgeInsets.all(16.0), // Adds padding around the form
+            padding: const EdgeInsets.all(15.0), // Adds padding around the form
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               crossAxisAlignment: CrossAxisAlignment.stretch,
               children: <Widget>[
-                const Text(
-                  'Login Page',
-                  textAlign: TextAlign.center,
-                  style: TextStyle(
-                    fontSize: 24,
-                    fontWeight: FontWeight.bold,
-                    color: Color.fromARGB(255, 95, 93, 93),
-                  ),
-                ),
-                const SizedBox(height: 30), // Adds some space between the title and the form fields
+                
+                const SizedBox(height: 10), // Adds some space between the title and the form fields
                 TextField(
                   decoration: InputDecoration(
                     filled: true,
-                    fillColor: const Color.fromARGB(255, 81, 80, 80).withOpacity(0.8),
+                    fillColor: Color.fromARGB(255, 247, 245, 245).withOpacity(0.8),
                     hintText: 'User ID',
                     border: const UnderlineInputBorder(), // Use underline style
                   ),
@@ -43,7 +35,7 @@ class LoginScreen extends StatelessWidget {
                   obscureText: true, // Masks the password input
                   decoration: InputDecoration(
                     filled: true,
-                    fillColor: const Color.fromARGB(255, 106, 104, 104).withOpacity(0.8),
+                    fillColor: Color.fromARGB(255, 240, 234, 234).withOpacity(0.8),
                     hintText: 'Password',
                     border: const UnderlineInputBorder(), // Use underline style
                   ),
@@ -64,8 +56,9 @@ class LoginScreen extends StatelessWidget {
                   child: const Text(
                     'Forgot Password?',
                     style: TextStyle(
-                      color: Color.fromARGB(255, 104, 102, 102),
-                      decoration: TextDecoration.underline,
+                      fontSize: 16,
+                      color: Color.fromARGB(255, 253, 253, 253),
+                      
                     ),
                   ),
                 ),
