@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 
+
 class ForgotPasswordScreen extends StatelessWidget {
   const ForgotPasswordScreen({Key? key}) : super(key: key);
+  
 
   @override
   Widget build(BuildContext context) {
@@ -25,10 +27,10 @@ class ForgotPasswordScreen extends StatelessWidget {
                 const TextField(
                   decoration: InputDecoration(
                     hintText: 'Enter your email or username',
-                    hintStyle: TextStyle(color: Color.fromARGB(255, 238, 237, 241)),
+                    hintStyle: TextStyle(color: Color.fromARGB(255, 71, 95, 124)),
                     border: InputBorder.none,
                     enabledBorder: UnderlineInputBorder(
-                      borderSide: BorderSide(color: Colors.white),
+                      borderSide: BorderSide(color: Color.fromARGB(255, 71, 95, 124)),
                     ),
                     focusedBorder: UnderlineInputBorder(
                       borderSide: BorderSide(color: Colors.white),
@@ -36,12 +38,19 @@ class ForgotPasswordScreen extends StatelessWidget {
                   ),
                   style: TextStyle(color: Colors.white),
                 ),
+                
+
                 const SizedBox(height: 20),
                 ElevatedButton(
                   onPressed: () {
                     // Add forgot password functionality here
                   },
-                  child: const Text('Submit'),
+                  style: ElevatedButton.styleFrom(
+                  
+                  ),
+                  child: const Text('Submit'
+                  ,style: TextStyle(color:Color.fromARGB(255, 71, 95, 124),),
+                  )
                 ),
                 const SizedBox(height: 30),
                 TextButton(

@@ -25,7 +25,7 @@ class LoginScreen extends StatelessWidget {
                 TextField(
                   decoration: InputDecoration(
                     filled: true,
-                    fillColor: Color.fromARGB(255, 247, 245, 245).withOpacity(0.8),
+                    fillColor: const Color.fromARGB(255, 247, 245, 245).withOpacity(0.8),
                     hintText: 'User ID',
                     border: const UnderlineInputBorder(), // Use underline style
                   ),
@@ -35,7 +35,7 @@ class LoginScreen extends StatelessWidget {
                   obscureText: true, // Masks the password input
                   decoration: InputDecoration(
                     filled: true,
-                    fillColor: Color.fromARGB(255, 240, 234, 234).withOpacity(0.8),
+                    fillColor: const Color.fromARGB(255, 240, 234, 234).withOpacity(0.8),
                     hintText: 'Password',
                     border: const UnderlineInputBorder(), // Use underline style
                   ),
